@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title>Portfolio Thomas Kreder</title>
+        <meta charset="UTF-8">
+        <meta content="noindex" name="robots">
+        <link href="styles.css" rel="stylesheet">
+        <script src="functions.js"></script>
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="images/logo.png">
+        <meta name="author" content="Thomas Kreder">
+        <meta name="description" content="Portfolio, opdracht AO"> 
+    </head>
+    <body>
+    <header>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="informatie.html">Informatie</a>
+            <a href="contact.html" style="text-decoration: underline;">Contact</a>
+            <h1 id="mobtitle">Contact</h1>
+            <div class="gegevens">
+                <h3>Thomas Kreder</h3>
+                <h3>ITB4-1B</h3>
+            </div>
+            <div onclick="hamBurger()" id="navbox"></div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div id="mobnavfiller"></div>
+            <div id="mobnavfiller2"></div>
+            <div id="mobileLinks">
+                <div id="containerkeepleft">
+                    <a id="homelink" href="index.html">Home</a>
+                    <a id="infolink" href="informatie.html">Info</a>
+                    <a id="contactlink" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="containercontact">
+        <img src="images/form.png" id="formimg"></img>
+        <p id="contactinformatie" class="contacttext">
+        	Mocht je verder nog vragen hebt of iets dergelijks kan je hieronder dit formulier invullen om een bericht te sturen.
+        </p>
+        <form name="formulier" action="mailto:t.kreder@student.alfa-college.nl?subject=Formulier van TKTurbo.nl" method="post" enctype="text/plain"
+        onsubmit="return confirm('Weet je zeker dat je het het formulier wilt versturen?');" onreset="return confirm('Weet je zeker dat je het het formulier wilt resetten?');">
+            <fieldset id="fieldset">
+                <input placeholder="Voornaam" required type="text" name="Voornaam" size="20"><br>
+                <input placeholder="Achternaam" required type="text" name="Achternaam" size="20"><br>
+                <input placeholder="E-Mail Adres" required type="email" name="E-mail" size="20"><br>
+                <textarea placeholder="Typ hier uw bericht..." name="Bericht" size="200"></textarea><br>
+                <div class="contacttext">Wil je updates ontvangen?<input id="checkboxnb" optional type="checkbox" name="Nieuwsbrief"><br></div><br>
+                <input type="submit" value="Verstuur">
+                <input type="reset" value="Reset"><br>
+            </fieldset>
+        </form>
+    </div>
+    <div id="filler"></div>
+    <footer>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/thomas-kreder/"><img id="linkedin" src="images/linkedin.png" alt="LinkedIn"></></a>
+        </div>
+    </footer>
+    </body>
+</html>
